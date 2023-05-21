@@ -12,6 +12,6 @@ resource "azurerm_kubernetes_fleet_manager" "fleet" {
   }
 
   location            = azurerm_resource_group.fleet.location
-  name                = "fleet-${var.ServiceName}-${var.EnvironmentPrefix}-001"
+  name                = "flhub-${var.ServiceName}-${var.EnvironmentPrefix}-001"
   resource_group_name = azurerm_resource_group.fleet.name
 }

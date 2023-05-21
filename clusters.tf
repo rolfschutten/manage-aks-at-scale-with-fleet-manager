@@ -84,7 +84,7 @@ resource "azapi_resource" "member2" {
 
 resource "azurerm_resource_group" "aks3" {
   name     = "rg-${var.ServiceName}-aks-${var.EnvironmentPrefix}-003"
-  location = "${var.Location}"
+  location = "${var.secLocation}"
 }
 
 resource "azurerm_kubernetes_cluster" "aks3" {

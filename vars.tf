@@ -16,6 +16,12 @@ variable "Location" {
   default = "westeurope"
 }
 
+variable "secLocation" {
+  type    = string
+  description = "Secondary resource location"
+  default = "northeurope"
+}
+
 variable "EnvironmentPrefix" {
   type     = string
   description = "The prefix of all resources referring to environment type. Choose p for production, t for testing and a for acceptance. Only 1 character."

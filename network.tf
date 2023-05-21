@@ -26,7 +26,7 @@ resource "azurerm_subnet" "subnet2" {
 
 resource "azurerm_resource_group" "vnet2" {
   name     = "rg-${var.ServiceName}-vnet-${var.EnvironmentPrefix}-002"
-  location = "${var.Location}"
+  location = "${var.secLocation}"
 }
 
 resource "azurerm_virtual_network" "vnet2" {

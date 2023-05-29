@@ -1,0 +1,24 @@
+{
+    "stages": [
+        {
+            "name": "stage1",
+            "groups": [
+                {
+                    "name": "flug-fleet-t-001"
+                }
+            ],
+            "afterStageWaitInSeconds": 3600
+        },
+        {
+            "name": "stage2",
+            "groups": [
+                {
+                    "name": "flug-fleet-t-002"
+                },
+                {
+                    "name": "flug-fleet-t-003"
+                }
+            ]
+        }
+    ]
+}

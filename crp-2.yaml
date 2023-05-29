@@ -1,0 +1,13 @@
+apiVersion: fleet.azure.com/v1alpha1
+kind: ClusterResourcePlacement
+metadata:
+  name: goodbye-world
+spec:
+  resourceSelectors:
+    - group: ""
+      version: v1
+      kind: Namespace
+      name: goodbye-world
+  policy:
+    clusterNames:
+      - flmem-fleet-t-001
